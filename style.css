@@ -188,8 +188,7 @@ div.grid-item7>p{
 /* Caixa da imagem do celular */
 div.grid-item8{
     display: flex;
-    padding-top: 7rem;
-    padding-bottom: 0.5rem;
+    padding-top: 2rem;
     justify-content: center;
     text-align: center;
     align-items: center;
