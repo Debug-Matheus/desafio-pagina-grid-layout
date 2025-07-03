@@ -46,11 +46,11 @@ div.grid-container {
 }
 /* Logo do site no topo */
 div.grid-container >img#img1{
-    width: 100px;
-    grid-area: 1/1;
+    min-width: 100px;
     position: relative;
-    top: -13%;
-    left: -13%;
+    top: -4.2rem;
+    left: -3.2rem;
+    
 }
 
 /* Centralização geral TITULO (Westimire) / SUBTITULO (A56 Headset) / BOTÕES (COMPRE AGORA / COMPRE TUDO) */
@@ -85,7 +85,6 @@ h1.grid-item1 {
     font-size: 3.5rem;
     line-height: 1.1;
     margin-top: 80px;
-    
 }
 
 /* Subtitulo (A56 Headset) */
