@@ -193,7 +193,7 @@ div.grid-item8 >img{
     width: 90%;
     max-width: 600px;
     height: auto;
-    border-radius: 30px;
+    border-radius: 0px 70px 0px 0px;
     padding: 1rem 0 0;
 }
 div.grid-item9{
@@ -209,7 +209,7 @@ div.grid-item9 >h2{
     font-weight: 500;
     font-size: 1.7rem;
     max-width: 600px;
-    width: 90%;
+    width: 98%;
 }
 /* Container de cards responsivo */
 div.flex-container {
@@ -285,6 +285,7 @@ div.flex-item > p {
 }
 div.grid-item10{
     justify-self: center;
+    margin-bottom: 10rem;
     
 }
 div.grid-item10>a{
@@ -305,4 +306,61 @@ div.grid-item10 :hover{
     background-color: rgba(255,255,255,0.8);
     transform: scale(1.08);
 
+}
+/* Centralização das seções de texto */
+div.grid-item11,
+div.grid-item12,
+div.grid-item13,
+div.grid-item14,
+div.grid-item15 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+div.grid-item11 {
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+div.grid-item11 > h2,
+div.grid-item12 > p,
+div.grid-item13 > p,
+div.grid-item14 > p,
+div.grid-item15 > p {
+    max-width: 600px;
+    width: 90%;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+/* Estilos individuais */
+div.grid-item11 > h2 {
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+div.grid-item12 > p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+div.grid-item13 > p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+div.grid-item14 > p,
+div.grid-item15 > p {
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+div.grid-item16>img{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 0px 70px 0px 0px;
+    padding: 1rem 0 0;
 }

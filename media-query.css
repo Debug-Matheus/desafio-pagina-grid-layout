@@ -116,7 +116,7 @@
   div.grid-item8 > img {
     max-width: 80%;
     height: auto;
-    border-radius: 0px 70px 0px 0px;
+    border-radius: 0px 90px 0px 0px;
     padding: 0;
     
   }
@@ -138,5 +138,38 @@
   }
   div.grid-item10{
     grid-area: 8/1/9/5;
+  }
+  div.grid-item11{
+    grid-area: 9/1/10/3;
+    justify-content: end; 
+  }
+  div.grid-item12{
+    grid-area: 10/1/11/3;
+    justify-content: end;
+  }
+  div.grid-item13{
+    grid-area: 11/1/12/3;
+    justify-content: end;
+  }
+  
+  div.grid-item14{
+    grid-area: 12/1/13/3;
+    justify-content: end;  
+  }
+  div.grid-item15{
+    grid-area: 13/1/14/3;
+    justify-content: end;     
+  }
+  div.grid-item16{
+      grid-area: 9/3/14/5;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+
+  }
+  div.grid-item16>img{
+    max-width: 80%;
+    height: auto;
+    border-radius: 0px 90px 0px 0px
   }
 }
