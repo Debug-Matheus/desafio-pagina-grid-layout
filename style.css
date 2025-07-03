@@ -49,9 +49,8 @@ div.grid-container >img#img1{
     width: 100px;
     grid-area: 1/1;
     position: relative;
-    transform: translate(-50%, -50%);
-    top: 35%;
-    left: 0%;
+    top: -13%;
+    left: -13%;
 }
 
 /* Centralização geral TITULO (Westimire) / SUBTITULO (A56 Headset) / BOTÕES (COMPRE AGORA / COMPRE TUDO) */
