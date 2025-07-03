@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
-/* === DESKTOP (grid 3×4 e posicionamentos exatos) === */
+/*  DESKTOP (grid 4×5 e posicionamentos exatos) */
 @media screen and (min-width: 1105px) {
-  /* Container reconfigurado para 4 colunas × 3 linhas */
+  /* Grid Container 4x5 mas caso aumente conteudo, ele aumenta também em linhas proporcionalmente  */
   div.grid-container {
     padding: 4rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, auto);
     grid-auto-rows: auto;
-    gap: 0; /* você pode ajustar se quiser espaçamento extra */
   }
+  /* Logo do site no topo */
   div.grid-container >img#img1{
     width: 100px;
     grid-area: 1/1;
@@ -19,7 +19,7 @@
     top: 19%;
     left: 9%;
 }
-  /* Logo no topo–esquerdo */
+  /* Nome da logo no topo */
   h2.grid-item2 {
     grid-area: 1 / 1 / 2 / 2;
     justify-self: start;
@@ -27,7 +27,7 @@
     margin: 0 0 0 2rem;
   }
 
-  /* Subtítulo “Westmire” – linha 2, colunas 1→3 */
+  /* Título (Westmire) */
   h1.grid-item1 {
     grid-area: 2 / 1 / 3 / 3;
     justify-self: center;
@@ -38,7 +38,7 @@
     padding: 0;
   }
 
-  /* Título “A56 Headset” – linha 3, colunas 1→3 */
+  /* Título (A56 Headset) */
   h1.grid-item1-1 {
     grid-area: 3 / 1 / 4 / 3;
     justify-self: center;
@@ -50,7 +50,7 @@
     padding-bottom: 120px;
   }
 
-  /* Botões lado a lado na mesma linha do título “Westmire” */
+  /* Botões, compre agora ( em cima) e compre tudo ( em baixo ) */
   a.grid-item3 {
     grid-area: 3 / 1 / 4 / 2;
     justify-self: end;
@@ -66,7 +66,7 @@
     margin-bottom: 100px;
   }
 
-  /* Imagem do headset ocupa colunas 3→5 e linhas 1→4 */
+  /* Imagem do Headset  */
   img.grid-item5 {
     grid-area: 1 / 3 / 4 / 5;
     justify-self: start;
@@ -76,8 +76,7 @@
     height: auto;
   }
 
-
-  /* Título + descrição agrupados (grid-item6 + grid-item7) */
+  /* Cáixa do Subtítulo Tecnolodia Nova */
   div.grid-item6 {
     grid-area: 4 / 1 / 5 / 3;
     align-self: end;
@@ -85,12 +84,13 @@
     padding-top: 180px;
     padding-right: 8rem;
   }
+  /* Subtítulo Tecnolodia Nova */
   div.grid-item6 > h2 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
   }
 
-  /* Parágrafo abaixo do título */
+  /* Caixa do Parágrafo abaixo do Subtítulo Tecnolodia Nova */
   div.grid-item7 {
     grid-area: 5 / 1 / 6 / 3;
     align-self: start;
@@ -98,21 +98,23 @@
     padding: 0;
     width: 500px;
   }
+  /* Parágrafo abaixo do Subtítulo Tecnolodia Nova */
   div.grid-item7 > p {
     font-size: 1.1rem;
     line-height: 1.5;
     margin: 0;
     padding: 0;
   }
-    /* Imagem do celular (grid-item8) */
+    /* Caixa da Imagem do Celular */
   div.grid-item8 {
-    grid-area: 4 / 3 / 6 / 5; /* Ocupa linhas 4 e 5 */
+    grid-area: 4 / 3 / 6 / 5;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 200px;
     padding-left: 10px;
   }
+  /* Imagem do Celular */
   div.grid-item8 > img {
     max-width: 80%;
     height: auto;
@@ -120,46 +122,62 @@
     padding: 0;
     
   }
+  /* Caixa do Subtítulo Comprar por Categoria */
   div.grid-item9{
     grid-area: 6/1/7/5;
     justify-self: center;
     align-self: center;
     
   }
+  /* Subtítulo Comprar por Categoria */
   div.grid-item9 > h2{
     font-size: 2rem;
     margin-bottom: 0.5rem;
   }
+  /* Flex Container para 3 cards */
   div.flex-container{
     grid-area: 7/1/8/5;
     justify-self: center;
     align-self: center;
     gap: 5rem;
   }
+  /* Caixa do Botão Comprar Tudo */
   div.grid-item10{
     grid-area: 8/1/9/5;
   }
+  /* Caixa do Subtítulo Suporte Especializado */
   div.grid-item11{
     grid-area: 9/1/10/3;
     justify-content: end; 
   }
+  /* Subtítulo Suporte Especializado */
+  div.grid-item11 > h2{
+    font-size: 2rem;
+  }
+  /* Paragrafo abaixo do Subtítulo Suporte Especializado */
   div.grid-item12{
     grid-area: 10/1/11/3;
     justify-content: end;
+  
   }
+  /* Paragrafo abaixo do Subtítulo Suporte Especializado */
   div.grid-item13{
     grid-area: 11/1/12/3;
     justify-content: end;
+    align-self: center;
+    justify-self: center;
   }
-  
+  /* Paragrafo abaixo do Subtítulo Suporte Especializado */
   div.grid-item14{
     grid-area: 12/1/13/3;
     justify-content: end;  
   }
+  /* Paragrafo abaixo do Subtítulo Suporte Especializado */
   div.grid-item15{
     grid-area: 13/1/14/3;
     justify-content: end;     
   }
+  /* Caixa da imagem do Suporte */
   div.grid-item16{
       grid-area: 9/3/14/5;
       display: flex;
@@ -167,9 +185,34 @@
       justify-content: center;
 
   }
+  /* Imagem do Suporte */
   div.grid-item16>img{
     max-width: 80%;
     height: auto;
     border-radius: 0px 90px 0px 0px
+  }
+  /* Caixa do subtítulo Conecte-se Conosco */
+  div.grid-item17{
+    grid-area: 14/1/15/3;
+    justify-self: center;
+    align-self: start;
+    display: flex;
+    justify-content: end; 
+    width: 100%;
+    margin-top: 120px;
+  }
+  /* Subtítulo Conecte-se Conosco */
+  div.grid-item17>h2{
+    font-size: 2rem;
+    max-width: 600px;
+    width: 90%;
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+  /* Flex Container dos paragrafos abaixo do subtitulo Conecte-se Conosco */
+  div.flex-container2{
+    grid-area: 14/3/15/5;
+    margin: auto;
+    margin-top: 120px;
   }
 }

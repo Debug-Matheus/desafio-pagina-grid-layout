@@ -1,17 +1,14 @@
 @charset "UTF-8";
-
+/* MOBILE FIRST */
+/* Fonte Montserrat importata do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* VARIAVEIS */
 :root {
-    --cor01: #6AE3DD;
-    --cor02: #C1EDE3;
-    --cor03: #FFEEE1;
-    --cor04: #CDDDE2;
-    --cor05: #86B6DF;
-    --cor06: #D5DFE4;
     --font1: 'Montserrat', sans-serif;
 }
 
+/* Configurações globais */
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +23,7 @@ body, html {
     overflow-x: hidden;
 }
 
-/* === CONTAINER HERO (mobile first) === */
+/* grid Container 1x1 para mobile, mas caso aumente conteudo, ele aumenta também em linhas proporcionalmente*/
 div.grid-container {
     width: 100vw;
     min-height: 100vh;
@@ -47,6 +44,7 @@ div.grid-container {
         linear-gradient(155deg, #C1EDE3 5%, #6AE3DD 60%);
     overflow: hidden;
 }
+/* Logo do site no topo */
 div.grid-container >img#img1{
     width: 100px;
     grid-area: 1/1;
@@ -56,7 +54,7 @@ div.grid-container >img#img1{
     left: 0%;
 }
 
-/* CENTRALIZAÇÃO GERAL NO MOBILE */
+/* Centralização geral TITULO (Westimire) / SUBTITULO (A56 Headset) / BOTÕES (COMPRE AGORA / COMPRE TUDO) */
 
 h1.grid-item1,
 h1.grid-item1-1,
@@ -69,7 +67,7 @@ img.grid-item5 {
 }
 
 
-/* LOGO / MARCA */
+/* Nome da logo no topo */
 h2.grid-item2 {
     font-weight: 800;
     font-size: 1.2rem;
@@ -82,7 +80,7 @@ h2.grid-item2 {
     
 }
 
-/* TÍTULO PRINCIPAL */
+/* Títutlo principal (Westmire) */
 h1.grid-item1 {
     font-weight: 400;
     font-size: 3.5rem;
@@ -91,7 +89,7 @@ h1.grid-item1 {
     
 }
 
-/* SUBTÍTULO DESTACADO */
+/* Subtitulo (A56 Headset) */
 h1.grid-item1-1 {
     font-weight: 700;
     font-size: 3.5rem;
@@ -99,7 +97,7 @@ h1.grid-item1-1 {
     
 }
 
-/* BOTÕES (mobile: um embaixo do outro) */
+/* Botões, compre agora ( em cima) e compre tudo ( em baixo ) */
 a.grid-item3,
 a.grid-item4 {
     display: inline-block;
@@ -111,52 +109,49 @@ a.grid-item4 {
     width: auto;
     transition: all 0.3s ease;
 }
+/* Botão compre agora  */
 a.grid-item3{
+    background-color: #fff;
+    color: #000;
     font-weight: 600;
     font-size: 1rem;
 }
+/* Botão compre tudo */
 a.grid-item4{
+    background-color: rgba(255,255,255,0.4);
+    color: #000;
     font-weight: 400;
     font-size: 1rem;
 }
 
-a.grid-item3 {
-    background-color: #fff;
-    color: #000;
-}
-
+/* Simples Animação no compre agora */
 a.grid-item3:hover {
     background-color: white;
     transform: scale(1.08);
 
 }
-
-a.grid-item4 {
-    background-color: rgba(255,255,255,0.4);
-    color: #000;
-}
-
+/* Simples Animação no compre tudo */
 a.grid-item4:hover {
     background-color: rgba(255,255,255,0.6);
     transform: scale(1.08);
 
 }
 
-/* IMAGEM (sempre visível, abaixo no mobile) */
+/* Caixa da Imagem do Headset */
 img.grid-item5 {
     max-width: 100%;
     height: auto;
     padding: 1rem;
+    transition: all 0.3s ease;
+    
 }
-div.acoplamento1{
-    padding: 5rem 1rem 0rem;
+/* Animação na imagem do Headset */
+img.grid-item5:hover {
+    transform: scale(1.08);
+    transition: all 0.3s ease;
+
 }
-div.acoplamento1>p{
-    font-weight: 400;
-    font-size: 1rem;
-    text-align: justify;
-    line-height: 1.5rem;
-}
+/* Caixa do subtitulo Tecnolodia Nova */
 div.grid-item6 {
     display: flex;
     padding-top: 8rem;
@@ -168,17 +163,20 @@ div.grid-item6 {
     
     
 }
+/* Subtitulo Tecnolodia Nova */
 div.grid-item6 >h2{
     font-weight: 500;
     font-size: 2rem;
     max-width: 600px;
     width: 90%;
 }
+/* Caixa do paragrafo abaixo do subtitulo Tecnolodia Nova */
 div.grid-item7{
     display: flex;
     justify-content: center;
     width: 100%;
 }
+/* Paragrafo abaixo do subtitulo Tecnolodia Nova */
 div.grid-item7>p{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -187,6 +185,17 @@ div.grid-item7>p{
     max-width: 600px;
     width: 90%;
 }
+/* Caixa da imagem do celular */
+div.grid-item8{
+    display: flex;
+    padding-top: 7rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+/* Imagem do celular */
 div.grid-item8 >img{
     display: block;
     margin: 0 auto;
@@ -196,6 +205,7 @@ div.grid-item8 >img{
     border-radius: 0px 70px 0px 0px;
     padding: 1rem 0 0;
 }
+/* Caixa do subtitulo Comprar por Categoria */
 div.grid-item9{
     display: flex;
     padding-top: 7rem;
@@ -205,23 +215,24 @@ div.grid-item9{
     align-items: center;
     width: 100%;
 }
+/* Subtitulo Comprar por Categoria */
 div.grid-item9 >h2{
     font-weight: 500;
     font-size: 1.7rem;
     max-width: 600px;
     width: 98%;
 }
-/* Container de cards responsivo */
+/* Flex Container para 3 cards */
 div.flex-container {
     display: flex;
-    flex-flow: row wrap ; /* MOBILE FIRST: empilhados */
+    flex-flow: row wrap ;
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
     padding: 2rem 1rem;
 }
 
-/* Card individual */
+/* Os 3 cards agrupados em uma unica class */
 div.flex-item {
     background-color: white;
     border-radius: 0px 50px 0px 50px;
@@ -237,6 +248,7 @@ div.flex-item {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.37);
     transition: all 0.3s ease;
 }
+/* Animação nos  3 cards */
 div.flex-item:hover{
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.25), rgba(220, 240, 255, 0.15));
   backdrop-filter: blur(6px);
@@ -245,7 +257,7 @@ div.flex-item:hover{
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-/* Imagem do card */
+/* Ajustando o tamanho das imagens dentro dos cards */
 div.flex-item > .imagem1,
 div.flex-item > .imagem2,
 div.flex-item > .imagem3 {
@@ -257,7 +269,7 @@ div.flex-item > .imagem3 {
     border-radius: 0px 30px 0px 0px;
     margin-top: 1rem;
 }
-/* Texto do card */
+/* h3 dos 3 cards */
 div.flex-item > h3 {
     font-size: 1rem;
     font-weight: 700;
@@ -265,13 +277,14 @@ div.flex-item > h3 {
     text-transform: uppercase;
     padding: 0 1rem;
 }
-
+/* Parágrafos dos 3 cards */
 div.flex-item > p {
     font-size: 0.9rem;
     padding: 0 1rem;
     color: #333;
     line-height: 1.4;
 }
+/* Imagens dos 3 cards */
 .imagem1 {
     background-image: url('imagens/foto3.jpg');
 }
@@ -283,11 +296,13 @@ div.flex-item > p {
 .imagem3 {
     background-image: url('imagens/foto5.jpg');
 }
+/* Botão Comprar Tudo */
 div.grid-item10{
     justify-self: center;
     margin-bottom: 10rem;
     
 }
+/* Configuração do botão Comprar Tudo */
 div.grid-item10>a{
     display: inline-block;
     text-decoration: none;
@@ -302,12 +317,13 @@ div.grid-item10>a{
     color: #000;
     transition: all 0.3s ease;
 }
+/* Animação do botão Comprar Tudo */
 div.grid-item10 :hover{
     background-color: rgba(255,255,255,0.8);
     transform: scale(1.08);
 
 }
-/* Centralização das seções de texto */
+/* Centralização das caixas: Suporte Especializado até os endereços que estão abaixos */
 div.grid-item11,
 div.grid-item12,
 div.grid-item13,
@@ -317,12 +333,12 @@ div.grid-item15 {
     justify-content: center;
     width: 100%;
 }
-
+/* Caixa do subtitulo Suporte Especializado */
 div.grid-item11 {
     margin-top: 2rem;
     padding-bottom: 0.5rem;
 }
-
+/* Subtitulo Suporte Especializado e os paragrafos que estão abaixo dele */
 div.grid-item11 > h2,
 div.grid-item12 > p,
 div.grid-item13 > p,
@@ -334,7 +350,7 @@ div.grid-item15 > p {
     text-align: justify;
 }
 
-/* Estilos individuais */
+/* Configuraçao do subtitulo Suporte Especializado e de cada paragrafo */
 div.grid-item11 > h2 {
     font-weight: 500;
     font-size: 1.7rem;
@@ -355,12 +371,33 @@ div.grid-item15 > p {
     font-size: 0.6rem;
     font-weight: 400;
 }
+/* Caixa da Imagem do Suporte */
 div.grid-item16>img{
     display: block;
     margin: 0 auto;
+    margin-bottom: 120px;
     width: 90%;
     max-width: 600px;
     height: auto;
     border-radius: 0px 70px 0px 0px;
     padding: 1rem 0 0;
 }
+/* Caixa do subtitulo Conecte-se Conosco */
+div.grid-item17{
+    justify-self: center;
+    margin-bottom: 5px;
+}
+/* Configuração do subtitulo Conecte-se Conosco */
+div.grid-item17 > h2{
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+/* Flex Container dos paragrafos abaixo do subtitulo Conecte-se Conosco */
+div.flex-container2{
+    display: flex;
+    justify-content: center;
+    line-height: 1.5rem;
+    gap: 5rem;
+    margin-bottom: 9rem;
+}
+
